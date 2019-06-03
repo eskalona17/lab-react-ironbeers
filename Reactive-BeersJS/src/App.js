@@ -8,12 +8,11 @@ import RandomBeer from './scenes/RandomBeer';
 import NewBeer from './scenes/NewBeer';
 import SingleBeer from './scenes/SingleBeer';
 
-
 function App() {
   return (
     <div className="App">
       <Header/>
-      <div>
+      <main className="container">
         <Switch>
           <Route exact path='/' component={Home}/>
           <Route exact path='/beers' component={BeersList} />
@@ -21,7 +20,7 @@ function App() {
           <Route exact path='/new-beer' component={NewBeer} />
           <Route exact path='/beers/:id' component={SingleBeer} />
         </Switch>
-      </div>
+      </main>
 
     </div>
   );
